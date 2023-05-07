@@ -6,15 +6,11 @@ function solution(numlist, n) {
     var answer = [];
     answer = numlist.sort((a,b)=> {
      const zero =  Math.abs(a-n)-Math.abs(b-n);
-        if(zero===0){
-         
+        if(zero===0){ 
         return b-a;
-
         }
         return zero;
     }
 );
-    
-    
     return answer;
 }
